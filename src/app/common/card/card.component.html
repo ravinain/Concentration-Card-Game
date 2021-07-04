@@ -1,0 +1,25 @@
+<div class="card heart user-select-none" (click)="flipCard()">
+    <div class="d-flex flex-row front" *ngIf="isFront()">
+        <img src="/assets/images/card-front-tree-sky.jpeg" class="p-2"/>
+    </div>
+
+    <div class="d-flex flex-row back" *ngIf="isBack()">
+        <div class="p-2 d-flex">
+            <div>
+                <div class="card-text {{data.icon.colorClass}}">{{data.cardText}}</div>
+                <i class="bi card-symbol {{data.icon.name}} {{data.icon.colorClass}}"></i>
+            </div>
+        </div>
+        <div class="p-2 d-flex flex-grow-1 align-items-center justify-content-center middle-section single">
+            <div>
+                <i class="bi {{data.icon.name}} {{data.icon.colorClass}}"></i>
+            </div>
+        </div>
+        <div class="p-2 d-flex align-items-end">
+            <div class="flip">
+                <div class="card-text {{data.icon.colorClass}}">{{data.cardText}}</div>
+                <i class="bi card-symbol {{data.icon.name}} {{data.icon.colorClass}}"></i>
+            </div>
+        </div>
+    </div>
+</div>

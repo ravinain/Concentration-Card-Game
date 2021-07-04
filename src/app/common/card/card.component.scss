@@ -1,0 +1,51 @@
+:host {
+    perspective: 12rem;
+}
+
+.card {
+    width: 10rem;
+    height: 12rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+    .p-2 {
+        height: 12rem;
+    }
+
+    .flip {
+        transform: rotate(180deg);
+    }
+
+    .card-text {
+        font-size: 1.3rem;
+    }
+
+    .card-symbol {
+        top: -5px;
+        position: relative;
+    }
+
+    .front {
+        img {
+            width: 10rem;
+            height: 12rem;
+        }
+    }
+
+    .back {
+    }
+
+    .single {
+        i {
+            font-size: 4rem;
+        }
+    }
+}
+
+.red {
+    color: #ff0000;
+}
+
+.black {
+    color: #000000;
+}
